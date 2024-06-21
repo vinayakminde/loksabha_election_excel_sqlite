@@ -20,5 +20,5 @@ for file in excel_files:
         # Save each sheet to a table in the SQLite database
         df.to_sql(sheet_name, conn, if_exists='replace', index=False)
 
-# Close the connection
+# Close the connection 
 conn.close()
